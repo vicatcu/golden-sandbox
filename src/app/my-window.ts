@@ -1,3 +1,3 @@
-export interface MyWindow extends Window{
+export interface MyWindow extends Window {
   $: any;
 }
