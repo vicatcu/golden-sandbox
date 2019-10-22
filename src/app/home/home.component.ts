@@ -12,21 +12,28 @@ export class FailComponent {
 
 const INITIAL_LAYOUT: IExtendedGoldenLayoutConfig = {
   settings: {
-
+    showCloseIcon: false,
+    showPopoutIcon: false,
+    reorderEnabled: false,
+    showMaximiseIcon: false,
+    hasHeaders: false
   },
   content: [
     {
       type: 'row',
+      isClosable: false,
       content: [
         {
           type: 'column',
+          isClosable: false,
           content: [
-            {type: 'component', title: 'Foo', componentName: 'fail-component'},
-            {type: 'component', title: 'Bar', componentName: 'fail-component'}
+            {type: 'component', isClosable: false, title: 'Foo', componentName: 'fail-component'},
+            {type: 'component', isClosable: false, title: 'Bar', componentName: 'fail-component'}
           ]
         },
         {
           type: 'component',
+          isClosable: false,
           componentName: 'fail-component',
           title: 'Ferrari'
         }
